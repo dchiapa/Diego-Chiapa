@@ -1,0 +1,11 @@
+header {
+  align-items: center;
+  background-color: #043988;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header>a>img {
+  height: auto;
+  width: 250px;
+}
