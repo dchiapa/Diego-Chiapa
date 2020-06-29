@@ -11,7 +11,7 @@
 	      <p>Proyecto de desarrollo propio, es una app que permite jugar al clasico juego que tradicionalmente jugamos con nuestras manos.</p>
 	      <p>Tecnologias: JS, HTML5, CSS3</p>
 	      <a href="http://piedra-papel-tijera.diegochiapa.com.ar" target="_blank" class="ancla"> Ir al Sitio</a>
-	      <a href="https://github.com/dchiapa/juegoPPT" target="_blank" class="ancla">Repositorio Github</a>
+	      <a href="https://github.com/dchiapa/piedra-papel-tijera" target="_blank" class="ancla">Repositorio Github</a>
 	    </article>
 	    <article>
 	      <h2>Generador de nombres</h2>
@@ -46,7 +46,14 @@
 	      <p>Proyecto del curso "JavaScript Moderno Guia Definitiva", Permite escribir un mensaje y que se muestre en el panel lateral, hasta ahora nada muy sofisticado, pero y si te digo que si cerras el navegador, y cuando vuelvas a la pagina web las notas anteriores van a seguir ahí? Si, las notas quedan guardadas en tu compu, no hay un servidor, no hay envío de datos, solo tu compu y tus notas.</p>
 	      <p>Tecnologias: JS, HTML5, CSS3</p>
 	      <a href="http://notas.diegochiapa.com.ar" target="_blank" class="ancla"> Ir al Sitio</a>
-	      <a href="https://github.com/dchiapa/appNotas" target="_blank" class="ancla">Repositorio Github</a>
+	      <a href="https://github.com/dchiapa/JsNotas" target="_blank" class="ancla">Repositorio Github</a>
+	    </article>
+	    <article>
+	      <h2>Carrito</h2>
+	      <p>Proyecto del curso "JavaScript Moderno Guia Definitiva", Permite añadir cursos a un carrito de compra.</p>
+	      <p>Tecnologias: JS, HTML5, CSS3</p>
+	      <a href="http://notas.diegochiapa.com.ar" target="_blank" class="ancla"> Ir al Sitio</a>
+	      <a href="https://github.com/dchiapa/JsCarrito" target="_blank" class="ancla">Repositorio Github</a>
 	    </article>
 	    <article>
 	      <h2>simar-srl.com.ar</h2>
