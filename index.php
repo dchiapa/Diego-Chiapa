@@ -47,6 +47,7 @@
 	      <h3>Instituto: Educación IT</h3>
 	      <p>2019 - 2021 - En curso.</p>
 	      <ul>
+	        <li>Maquetado Avanzado: HTML5 y CSS3</li>
 	        <li>Javascript Desarrollador Avanzado Front-End.</li>
 	        <li>Git: Desarrollo Colaborativo.</li>
 	        <li>Maquetación Web: HTML 5 y CSS.</li>
