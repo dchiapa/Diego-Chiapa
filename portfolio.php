@@ -6,6 +6,13 @@
 	<main id="portfolio">
 	  <h1>Portfolio</h1>
 	  <section>
+      <article>
+	      <h2>Que hacer?</h2>
+	      <p>Proyecto de desarrollo propio, es una app que permite mantener una lista de tareas bastante sencilla.</p>
+	      <p>Tecnologias: JS, HTML5, CSS3</p>
+	      <a href="http://pendientes.diegochiapa.com.ar" target="_blank" class="ancla"> Ir al Sitio</a>
+	      <a href="https://github.com/dchiapa/queHacerApp" target="_blank" class="ancla">Repositorio Github</a>
+	    </article>
 	    <article>
 	      <h2>Juego piedra, papel o tijera</h2>
 	      <p>Proyecto de desarrollo propio, es una app que permite jugar al clasico juego que tradicionalmente jugamos con nuestras manos.</p>
