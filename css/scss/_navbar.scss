@@ -1,0 +1,112 @@
+/* ----- NAV ----- */
+.nav {
+  background: $color-bg-extra;
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  position: relative;
+  z-index: 10;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: end;
+  }
+  &__hamburguer {
+    align-items: center;
+    justify-self: center;
+    cursor: pointer;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    transition: all 0.5s ease-in-out;
+    width: 60px;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    &__icon {
+      background: $color-white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px $color-shadow;
+      height: 6px;
+      transition: all 0.5s ease-in-out;
+      width: 50px;
+      &::before,
+      &::after {
+        background: $color-white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px $color-shadow;
+        content: "";
+        height: 6px;
+        position: absolute;
+        transition: all 0.5s ease-in-out;
+        width: 50px;
+      }
+      &::before {
+        transform: translateY(-16px);
+      }
+      &::after {
+        transform: translateY(16px);
+      }
+    }
+    &.open &__icon {
+      background: transparent;
+      box-shadow: none;
+    }
+    &.open &__icon::before {
+      transform: rotate(45deg) translateY(0);
+    }
+    &.open &__icon::after {
+      transform: rotate(-45deg) translateY(0);
+    }
+  }
+  &__content {
+    background-color: $color-bg-extra;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 50%;
+    }
+  }
+  &__item {
+    align-items: center;
+    border-bottom: 1px solid $color-white;
+    display: flex;
+    height: 0px;
+    justify-content: center;
+    opacity: 0;
+    transition: background-color 0.5s ease-in-out, height 1s ease-in-out,
+      opacity 1s ease-in-out;
+    &.active {
+      height: 60px;
+      opacity: 1;
+    }
+    &:hover {
+      background-color: $color-shadow;
+      cursor: pointer;
+    }
+    @media screen and (min-width: 768px) {
+      border: none;
+      border-left: 1px solid $color-white;
+      height: 60px;
+      opacity: 1;
+      width: 30%;
+    }
+  }
+  &__link {
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    height: 100%;
+    text-decoration: none;
+    width: 100%;
+    &:hover {
+      animation: scaleLink 2s ease-in-out;
+    }
+  }
+}
+/* ----- NAV ----- */

@@ -1,0 +1,19 @@
+/* ----- HEADER ----- */
+.header {
+  &__brand {
+    align-items: center;
+    background-color: $color-bg-main;
+    display: flex;
+    font-size: 1.5em;
+    height: 150px;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+    & img {
+      width: 200px;
+    }
+  }
+}
+/* ----- HEADER ----- */
