@@ -6,19 +6,11 @@
   align-items: center;
   padding: 2rem 0;
   gap: 2rem;
-  &__article,
-  & .about,
-  & .desarrollo {
-    background-color: $color-bg-section;
-    border-radius: 1rem;
-    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
-    padding: 1rem;
-    width: 80%;
-    & p {
-      margin: 1rem 0;
-    }
+  & .academica {
+    @include sections($color-bg-section, $color-white);
   }
   & .about {
+    @include sections($color-bg-section, $color-white);
     &__content {
       display: flex;
       flex-direction: column;
@@ -35,8 +27,12 @@
         width: 324px;
       }
     }
+    &__paragraph {
+      margin: 1rem 0;
+    }
   }
   & .desarrollo {
+    @include sections($color-bg-section, $color-white);
     display: flex;
     flex-direction: column;
     &__images {
@@ -54,6 +50,66 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
+      }
+    }
+  }
+  & .cursos {
+    @include sections($color-bg-section, $color-white);
+    position: relative;
+    &__list {
+      margin-left: 1rem;
+    }
+    &__item {
+      margin-bottom: 0.5rem;
+      &[data-target] {
+        color: $color-bg-main;
+        cursor: pointer;
+        &:before {
+          content: "✓";
+        }
+      }
+    }
+    & .cert {
+      align-items: center;
+      background-color: $color-gray;
+      border-radius: 1rem;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      height: 60%;
+      width: 90%;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      @media screen and (min-width: 576px) {
+        height: 85%;
+      }
+      &__image {
+        margin: 1rem 0;
+        width: 80%;
+        @media screen and (min-width: 992px) {
+          height: 90%;
+          width: auto;
+        }
+      }
+      &__close {
+        background-color: #f00;
+        border: none;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem 2rem;
+        &:hover {
+          box-shadow: 2px 2px 2px rgba(255, 0, 0, 0.308);
+          color: $color-white;
+          cursor: pointer;
+        }
+        &:active {
+          box-shadow: none;
+        }
       }
     }
   }
