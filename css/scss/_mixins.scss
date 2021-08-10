@@ -1,0 +1,7 @@
+@mixin sections($bg-color, $shadow) {
+  background-color: $bg-color;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px rgba($shadow, 0.5);
+  padding: 1rem;
+  width: 80%;
+}
