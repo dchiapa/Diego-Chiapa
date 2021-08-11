@@ -284,9 +284,9 @@ h3 {
           box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
   padding: 1rem;
   width: 80%;
-}
-
-.home .about__content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,17 +294,39 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
-  .home .about__content {
+  .home .about {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+
+.home .about__title {
+  width: 100%;
+}
+
+.home .about__aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .home .about__aside {
+    width: calc(40% - 1rem);
+    margin-right: 1rem;
   }
 }
 
@@ -315,9 +337,44 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .home .about__image {
-    margin-right: 2rem;
     width: 324px;
   }
+}
+
+.home .about__button {
+  background-color: #e55e96;
+  border: none;
+  border-radius: 1rem;
+  -webkit-box-shadow: 2px 2px 2px rgba(229, 94, 150, 0.308);
+          box-shadow: 2px 2px 2px rgba(229, 94, 150, 0.308);
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.5rem auto;
+  padding: 0.5rem 1rem;
+  width: 70%;
+}
+
+.home .about__button:hover {
+  color: white;
+}
+
+.home .about__button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.home .about__break {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.home .about__text {
+  width: 60%;
 }
 
 .home .about__paragraph {
@@ -482,8 +539,9 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 4rem;
+  padding: 2rem 0;
   gap: 2rem;
+  padding: 2rem 4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -650,6 +708,24 @@ h3 {
 }
 
 /* ----- CONTACT ----- */
+/* ----- CURRICULUM ----- */
+.curriculum {
+  background-color: #043988;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+/* ----- CURRICULUM ----- */
 /* ----- MAIN ----- */
 /* ----- FOOTER ----- */
 footer {
