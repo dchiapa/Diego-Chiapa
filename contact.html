@@ -46,55 +46,41 @@
         </li>
       </ul>
     </nav>
-    <main class="portfolio">
-      <h1 class="portfolio__title">Portfolio - Proyectos</h1>
-      <article class="project">
-        <h2 class="project__title">Diego Chiapa - Blog</h2>
-        <p class="project__text">
-          Proyecto desarrollado para el curso de Desarrollo Web de Coderhose,
-          consiste en un blog sencillo.
-        </p>
-        <p class="project__text">Tecnologías: HTML5, CSS3, SASS, Bootstrap</p>
-        <a
-          class="project__link"
-          href="https://github.com/dchiapa/proyecto_DesarrolloWeb_16620"
-          target="_blank"
-          >Repositorio Github
-        </a>
-      </article>
-      <article class="project">
-        <h2 class="project__title">Pedidos Crispy</h2>
-        <p class="project__text">
-          Proyecto desarrollado para Crispy argentina, permite seleccionar
-          productos y sumarlos a un carrito de compras, luego envía el pedido
-          por whatsapp. .
-        </p>
-        <p class="project__text">Tecnologías: JS, HTML5, CSS3, Bootstrap</p>
-        <a
-          class="project__link"
-          href="https://pedidoscrispy.com.ar"
-          target="_blank"
-          >Ir al Sitio
-        </a>
-      </article>
-      <article class="project">
-        <h2 class="project__title">Portfolio Diego Chiapa</h2>
-        <p class="project__text">
-          Sitio web para mostrar mis trabajos, y mi CV, tambien con acceso a
-          Github y linkeIn.
-        </p>
-        <p class="project__text">Tecnologías: JS, HTML5, CSS3, SASS</p>
-        <a
-          class="project__link"
-          href="https://github.com/dchiapa/Diego-Chiapa"
-          target="_blank"
-          >Repositorio Github
-        </a>
-      </article>
+    <main class="contact">
+      <h1 class="contact__title">Contacto</h1>
+      <form class="contact__form" action="contact.php" method="POST">
+        <label class="contact__text" for="nombre">Nombre: </label>
+        <input
+          class="contact__field"
+          type="text"
+          name="nombre"
+          id="nombre"
+          required
+        />
+        <label class="contact__text" for="mail">E-mail: </label>
+        <input
+          class="contact__field"
+          type="email"
+          name="mail"
+          id="mail"
+          required
+        />
+        <label class="contact__text" for="mensaje">Mensaje: </label>
+        <textarea
+          class="contact__field"
+          name="mensaje"
+          id="mensaje"
+          cols="50"
+          rows="3"
+          required
+        ></textarea>
+        <button class="contact__button">Enviar</button>
+      </form>
     </main>
     <footer>
       <p>&reg; 2020 Diseñado por Diego Chiapa</p>
     </footer>
+    <script src="js/Certificates.js"></script>
     <script src="js/Menu.js"></script>
     <script src="js/otros.js"></script>
   </body>
