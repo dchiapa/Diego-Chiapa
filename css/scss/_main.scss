@@ -11,7 +11,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
     @media screen and (min-width: 768px) {
       flex-direction: row;
     }
@@ -22,7 +21,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      width: 80%;
+      width: 100%;
       @media screen and (min-width: 768px) {
         width: calc(40% - 1rem);
         margin-right: 1rem;
@@ -42,7 +41,10 @@
       flex-basis: 100%;
     }
     &__text {
-      width: 60%;
+      width: 100%;
+      @media screen and (min-width: 768px) {
+        width: 60%;
+      }
     }
 
     &__paragraph {
@@ -136,11 +138,11 @@
 /* ----- PORTFOLIO ----- */
 .portfolio {
   @include main();
-  padding: 2rem 4rem;
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 2rem;
   }
   &__title {
     color: $color-white;
@@ -152,7 +154,16 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 400px;
-    width: 30%;
+    width: 100%;
+    @media screen and (min-width: 576px) {
+      width: 75%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 45%;
+    }
+    @media screen and (min-width: 992px) {
+      width: 320px;
+    }
     &__title {
       margin: 0;
     }
@@ -174,20 +185,24 @@
   }
   &__form {
     @include sections($color-bg-section, $color-white);
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     justify-content: space-evenly;
     @media screen and (min-width: 768px) {
-      padding: 1rem 4rem;
-      width: 50%;
+      padding: 2rem;
     }
+  }
+  &__text {
+    width: 80%;
   }
   &__field {
     background-color: rgba($color-black, 0.2);
     border: none;
     border-bottom: 1px dashed $color-black;
     padding: 0.5rem;
+    width: 80%;
     &:focus-visible {
       outline: none;
     }

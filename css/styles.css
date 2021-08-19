@@ -264,7 +264,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 0;
+  padding: 1rem;
   gap: 2rem;
 }
 
@@ -274,7 +274,12 @@ h3 {
   -webkit-box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
           box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
   padding: 1rem;
-  width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .home .academica {
+    width: 80%;
+  }
 }
 
 .home .about {
@@ -283,7 +288,6 @@ h3 {
   -webkit-box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
           box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
   padding: 1rem;
-  width: 80%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -296,6 +300,12 @@ h3 {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .home .about {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -320,7 +330,7 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -356,7 +366,7 @@ h3 {
           justify-content: center;
   margin: 0.5rem auto;
   padding: 0.5rem 1rem;
-  width: 70%;
+  width: 80%;
 }
 
 .home .about__button:hover {
@@ -374,7 +384,13 @@ h3 {
 }
 
 .home .about__text {
-  width: 60%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .home .about__text {
+    width: 60%;
+  }
 }
 
 .home .about__paragraph {
@@ -387,7 +403,6 @@ h3 {
   -webkit-box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
           box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
   padding: 1rem;
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,6 +410,12 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .home .desarrollo {
+    width: 80%;
+  }
 }
 
 .home .desarrollo__images {
@@ -441,8 +462,13 @@ h3 {
   -webkit-box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
           box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
   padding: 1rem;
-  width: 80%;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .home .cursos {
+    width: 80%;
+  }
 }
 
 .home .cursos__list {
@@ -539,9 +565,8 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 0;
+  padding: 1rem;
   gap: 2rem;
-  padding: 2rem 4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -555,6 +580,7 @@ h3 {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    padding: 2rem;
   }
 }
 
@@ -569,7 +595,6 @@ h3 {
   -webkit-box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
           box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
   padding: 1rem;
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,7 +606,31 @@ h3 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 400px;
-  width: 30%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio .project {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .portfolio .project {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio .project {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .portfolio .project {
+    width: 320px;
+  }
 }
 
 .portfolio .project__title {
@@ -607,7 +656,7 @@ h3 {
           justify-content: center;
   margin: 0.5rem auto;
   padding: 0.5rem 1rem;
-  width: 70%;
+  width: 80%;
 }
 
 .portfolio .project__link:hover {
@@ -633,7 +682,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 0;
+  padding: 1rem;
   gap: 2rem;
 }
 
@@ -648,7 +697,9 @@ h3 {
   -webkit-box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
           box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
   padding: 1rem;
-  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -664,9 +715,18 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .contact__form {
-    padding: 1rem 4rem;
-    width: 50%;
+    width: 80%;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .contact__form {
+    padding: 2rem;
+  }
+}
+
+.contact__text {
+  width: 80%;
 }
 
 .contact__field {
@@ -674,6 +734,7 @@ h3 {
   border: none;
   border-bottom: 1px dashed black;
   padding: 0.5rem;
+  width: 80%;
 }
 
 .contact__field:focus-visible {
@@ -695,7 +756,7 @@ h3 {
           justify-content: center;
   margin: 0.5rem auto;
   padding: 0.5rem 1rem;
-  width: 70%;
+  width: 80%;
 }
 
 .contact__button:hover {
@@ -721,7 +782,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 0;
+  padding: 1rem;
   gap: 2rem;
 }
 
