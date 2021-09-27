@@ -200,8 +200,8 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   opacity: 0;
-  -webkit-transition: background-color 0.5s ease-in-out, height 1s ease-in-out, opacity 1s ease-in-out;
-  transition: background-color 0.5s ease-in-out, height 1s ease-in-out, opacity 1s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out, height 1s ease-in-out, opacity 1s ease-in-out;
+  transition: background-color 0.5s ease-in-out, height 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .nav__item.active {
@@ -366,6 +366,7 @@ h3 {
           justify-content: center;
   margin: 0.5rem auto;
   padding: 0.5rem 1rem;
+  text-align: center;
   width: 80%;
 }
 
@@ -605,7 +606,7 @@ h3 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 400px;
+  height: 550px;
   width: 100%;
 }
 
@@ -656,6 +657,7 @@ h3 {
           justify-content: center;
   margin: 0.5rem auto;
   padding: 0.5rem 1rem;
+  text-align: center;
   width: 80%;
 }
 
@@ -756,6 +758,7 @@ h3 {
           justify-content: center;
   margin: 0.5rem auto;
   padding: 0.5rem 1rem;
+  text-align: center;
   width: 80%;
 }
 
